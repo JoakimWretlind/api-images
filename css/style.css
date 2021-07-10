@@ -1,0 +1,96 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'lato', sans-serif;
+  background: #333;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  font-size: clamp(1.6rem, 4vw, 4rem);
+  text-transform: capitalize;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 715px) {
+  .header {
+    margin: 2rem auto;
+    letter-spacing: .3rem;
+  }
+}
+
+.container {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: clamp(-15%, 0%, 0%);
+}
+
+.container li {
+  line-height: 1.6;
+  margin: 0 3rem;
+}
+
+.container a {
+  text-transform: capitalize;
+  font-size: clamp(1.2rem, 3vw, 3rem);
+  font-family: 'montserrat', sans-serif;
+  color: #333;
+}
+/*# sourceMappingURL=style.css.map */
